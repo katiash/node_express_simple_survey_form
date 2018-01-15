@@ -62,7 +62,7 @@ app.get('/result', function(req, res){
     console.log(`At /result request.body items: ${req.session.survey_result}`);
     console.log(typeof req.session.survey_result );
     // if (typeof(req.session.survey_result)!==undefined){
-        return res.render('result', {survey_result : req.session.survey_result.survey });
+        return res.render('result', {survey_result : req.session.survey_result&&req.session.survey_result.survey });
     // }
     // else {
     //     req.session.survery_result = {survey : {name: 'default', dojo_loc : 'default', fave_lang : 'default', comment : 'default'}};
