@@ -1,0 +1,23 @@
+<h1><u> Submitted Information </u></h1>
+
+<table>
+    <% if (typeof survey_result !== undefined) { %>
+
+    <tr>
+        <td> Name:</td>
+        <td> <%=survey_result.name%></td>
+    </tr>
+    <tr>
+        <td> Dojo Location:</td>
+        <td> <%=survey_result.dojo_loc%></td>
+    </tr>
+    <tr>
+        <td> Favourite Language:</td>
+        <td> <%=survey_result.fave_lang%></td>
+    </tr>
+    <tr>
+        <td>Comment:</td>
+        <td><%=survey_result.comment%> </td>
+    </tr>
+    <% } %>
+</table>
